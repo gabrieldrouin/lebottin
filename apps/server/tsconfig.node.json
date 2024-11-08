@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "vitest.config.ts"
+  ]
+}
