@@ -1,0 +1,35 @@
+{
+  "name": "lebottin",
+  "version": "1.0.0",
+  "description": "A digital rolodex for Quebec's music scene.",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "dev": "pnpm -r dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "apps/client/**/*.{js,jsx,ts,tsx}": [
+      "pnpm --filter @lebottin/client lint --fix"
+    ],
+    "apps/server/**/*.{js,ts}": [
+      "pnpm --filter @lebottin/server lint --fix"
+    ]
+  },
+  "keywords": [],
+  "author": "[Gabriel Drouin] <info@gabrieldrouin.com>",
+  "homepage": "https://github.com/gabrieldrouin/lebottin#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrieldrouin/lebottin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gabrieldrouin/lebottin/issues"
+  },
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.10"
+  }
+}
